@@ -596,6 +596,9 @@ final class Dodo: DodoInterface, DodoButtonViewDelegate {
   /// Specify optional layout guide for positioning the bar view.
   var bottomLayoutGuide: UILayoutSupport?
   
+  /// Specify optional delegate
+  var delegate: DodoDelegate?
+
   /// Defines styles for the bar.
   var style = DodoStyle(parentStyle: DodoPresets.defaultPreset.style)
 
@@ -684,7 +687,9 @@ final class Dodo: DodoInterface, DodoButtonViewDelegate {
   func hide() {
     hideTimer?.cancel()
     
-    toolbar?.hide(onAnimationCompleted: {})
+    toolbar?.hide(onAnimationCompleted: {
+        self.delegate?.dodoDidHide()
+    })
   }
   
   func listenForKeyboard() {
@@ -759,6 +764,24 @@ public typealias DodoBarOnTap = ()->()
 
 // ----------------------------
 //
+// DodoDelegate.swift
+//
+// ----------------------------
+
+//
+//  DodoDelegate.swift
+//  Dodo
+//
+//  Created by Martin Arnberg on 12/22/15.
+//  Copyright © 2015 Marketplacer. All rights reserved.
+//
+public protocol DodoDelegate {
+    func dodoDidHide()
+}
+
+
+// ----------------------------
+//
 // DodoInterface.swift
 //
 // ----------------------------
@@ -785,6 +808,9 @@ public protocol DodoInterface: class {
   /// Specify optional layout guide for positioning the bar view.
   var bottomLayoutGuide: UILayoutSupport? { get set }
   
+  /// Specify optional delegate
+  var delegate: DodoDelegate? { get set }
+
   /// Defines styles for the bar.
   var style: DodoStyle { get set }
   
@@ -1154,6 +1180,9 @@ public class DodoMock: DodoInterface {
   
   public var topLayoutGuide: UILayoutSupport?
   public var bottomLayoutGuide: UILayoutSupport?
+    
+  public var delegate: DodoDelegate?
+
   public var style = DodoStyle(parentStyle: DodoPresets.defaultPreset.style)
   
   public init() { }

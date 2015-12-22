@@ -26,6 +26,9 @@ final class Dodo: DodoInterface, DodoButtonViewDelegate {
   /// Specify optional layout guide for positioning the bar view.
   var bottomLayoutGuide: UILayoutSupport?
   
+  /// Specify optional delegate
+  var delegate: DodoDelegate?
+
   /// Defines styles for the bar.
   var style = DodoStyle(parentStyle: DodoPresets.defaultPreset.style)
 
@@ -114,9 +117,11 @@ final class Dodo: DodoInterface, DodoButtonViewDelegate {
   func hide() {
     hideTimer?.cancel()
     
-    toolbar?.hide(onAnimationCompleted: {})
+    toolbar?.hide(onAnimationCompleted: {
+        self.delegate?.dodoDidHide()
+    })
   }
-  
+    
   func listenForKeyboard() {
     
   }

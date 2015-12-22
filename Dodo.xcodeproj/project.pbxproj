@@ -13,6 +13,8 @@
 		2B5589691B60755D008CA494 /* UnderKeyboardDistrib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5589671B60753E008CA494 /* UnderKeyboardDistrib.swift */; };
 		2B6CA4531B5F74480003B836 /* DodoKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CA4521B5F74480003B836 /* DodoKeyboardListener.swift */; };
 		2B6CA4551B5F77B40003B836 /* DodoKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CA4521B5F74480003B836 /* DodoKeyboardListener.swift */; };
+		5BDA0ACF1C29CBDC00C6150A /* DodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA0ACE1C29CBDC00C6150A /* DodoDelegate.swift */; };
+		5BDA0AD01C29CBDC00C6150A /* DodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDA0ACE1C29CBDC00C6150A /* DodoDelegate.swift */; };
 		7E34D3791B605B6A00BECDCA /* XCTest+postKeyboardNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34D3781B605B6A00BECDCA /* XCTest+postKeyboardNotification.swift */; };
 		7E34D3801B60654E00BECDCA /* LayoutGuideMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34D37F1B60654E00BECDCA /* LayoutGuideMock.swift */; };
 		7E4066B61B212BCB00E0AC41 /* DodoAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4066B51B212BCB00E0AC41 /* DodoAnimation.swift */; };
@@ -145,6 +147,7 @@
 		2B05999B1BABBA8300F36AED /* DodoBarOnTap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoBarOnTap.swift; sourceTree = "<group>"; };
 		2B5589671B60753E008CA494 /* UnderKeyboardDistrib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderKeyboardDistrib.swift; sourceTree = "<group>"; };
 		2B6CA4521B5F74480003B836 /* DodoKeyboardListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoKeyboardListener.swift; sourceTree = "<group>"; };
+		5BDA0ACE1C29CBDC00C6150A /* DodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoDelegate.swift; sourceTree = "<group>"; };
 		7E34D3781B605B6A00BECDCA /* XCTest+postKeyboardNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+postKeyboardNotification.swift"; sourceTree = "<group>"; };
 		7E34D37F1B60654E00BECDCA /* LayoutGuideMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutGuideMock.swift; sourceTree = "<group>"; };
 		7E4066B51B212BCB00E0AC41 /* DodoAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DodoAnimation.swift; sourceTree = "<group>"; };
@@ -292,6 +295,7 @@
 				7EDF78941B21068800A9597E /* Utils */,
 				7EDF78861B21068800A9597E /* DodoToolbar.swift */,
 				7EDF78901B21068800A9597E /* Dodo.swift */,
+				5BDA0ACE1C29CBDC00C6150A /* DodoDelegate.swift */,
 				7EF94B9D1B29207F006B4429 /* DodoInterface.swift */,
 				2B05999B1BABBA8300F36AED /* DodoBarOnTap.swift */,
 				2B6CA4521B5F74480003B836 /* DodoKeyboardListener.swift */,
@@ -698,6 +702,7 @@
 				7EDF78A31B21068800A9597E /* DodoBarDefaultStyles.swift in Sources */,
 				7E4946541B26942000915DB3 /* DodoButtonViewDelegate.swift in Sources */,
 				7EDF78B11B21068800A9597E /* DodoColor.swift in Sources */,
+				5BDA0ACF1C29CBDC00C6150A /* DodoDelegate.swift in Sources */,
 				7EDF78A91B21068800A9597E /* DodoPresets.swift in Sources */,
 				7EC51DA41B215C070070019F /* DodoAnimationsShow.swift in Sources */,
 				7EF94B9E1B29207F006B4429 /* DodoInterface.swift in Sources */,
@@ -727,6 +732,7 @@
 				7E4946551B26942C00915DB3 /* DodoButtonViewDelegate.swift in Sources */,
 				7EDF78E21B21071500A9597E /* DodoButtonDefaultStyles.swift in Sources */,
 				7E49464F1B2666DF00915DB3 /* DodoIcons.swift in Sources */,
+				5BDA0AD01C29CBDC00C6150A /* DodoDelegate.swift in Sources */,
 				2B6CA4551B5F77B40003B836 /* DodoKeyboardListener.swift in Sources */,
 				7EDF78E91B21072200A9597E /* OnTap.swift in Sources */,
 				7EC51DA71B215D450070019F /* DodoAnimationsShow.swift in Sources */,

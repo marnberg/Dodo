@@ -1,7 +1,7 @@
 import UIKit
 import Dodo
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DodoDelegate {
   
   @IBOutlet weak var testToolbar: UIToolbar!
   @IBOutlet weak var topSwitch: UISwitch!
@@ -56,6 +56,7 @@ class ViewController: UIViewController {
   }
   
   private func show() {
+    view.dodo.delegate = self
     view.dodo.style.bar.locationTop = topSwitch.on
     view.dodo.style.bar.hideAfterDelaySeconds = hideAfterDelaySwitch.on ? 3 : 0
     view.dodo.style.bar.debugMode = debugModeSwitch.on
@@ -269,5 +270,10 @@ class ViewController: UIViewController {
       }
     )
   }
+    
+    
+    func dodoDidHide() {
+        print("Dodo Did Hide 🌻🌼🐁🍃")
+    }
 }
 

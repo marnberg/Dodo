@@ -36,6 +36,9 @@ public class DodoMock: DodoInterface {
   
   public var topLayoutGuide: UILayoutSupport?
   public var bottomLayoutGuide: UILayoutSupport?
+    
+  public var delegate: DodoDelegate?
+
   public var style = DodoStyle(parentStyle: DodoPresets.defaultPreset.style)
   
   public init() { }

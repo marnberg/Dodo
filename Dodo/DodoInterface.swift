@@ -20,6 +20,9 @@ public protocol DodoInterface: class {
   /// Specify optional layout guide for positioning the bar view.
   var bottomLayoutGuide: UILayoutSupport? { get set }
   
+  /// Specify optional delegate
+  var delegate: DodoDelegate? { get set }
+
   /// Defines styles for the bar.
   var style: DodoStyle { get set }
   
